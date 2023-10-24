@@ -23,14 +23,14 @@ const App: React.FC = () => {
 
   return (
     <div
-      className={` container App ${
+      className={` container App transition duration-300 ease-in-out ${
         darkMode ? "bg-gray-800 text-white" : "bg-white text-black"
       } font-jakarta`}
     >
-      <div className="header">
+      <div className="header p-3 transition duration-300 ease-in-out">
         {currentStep > 1 ? (
           <button
-            className=" bg-gray-200 p-1 rounded-lg"
+            className=" bg-gray-100 p-1 ml-5 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
             onClick={() => setCurrentStep(currentStep - 1)}
           >
             <svg
@@ -50,10 +50,13 @@ const App: React.FC = () => {
             </svg>
           </button>
         ) : (
-          <div className="fake-back bg-white p-1 rounded-lg h-7 w-7 "></div>
+          <div className="fake-back bg-white p-1 rounded-lg h-7 w-7 transition duration-300 ease-in-out"></div>
         )}
-        <h1 className="title">TopicTales</h1>
-        <button onClick={toggleDarkMode} className="mode-btn">
+        <a href="/">
+         <h1 className="title font-extrabold transition ease-in-out cursor-pointer">TopicTales</h1>
+        </a>
+
+        <button onClick={toggleDarkMode} className="mode-btn mr-5 transition duration-300 ease-in-out">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"

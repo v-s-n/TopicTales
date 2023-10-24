@@ -6,11 +6,11 @@ interface FinalScreenProps {
 
 const FinalScreen: React.FC<FinalScreenProps> = ({ setCurrentStep }) => {
   return (
-    <div className="px-4 relative flex flex-col items-center">
-      <h1 className="story-title font-bold text-lg">
+    <div className="mx-3 mt-5 p-5 relative flex flex-col items-center">
+      <h1 className="story-title font-extrabold text-lg">
         The Quantum Quest of Zippy Quark
       </h1>
-      <p className="story p-2 text-base pb-8 ">
+      <p className="story p-2 text-base pt-5 pb-8 leading-8 text-center">
         Zippy Quark was a teeny tiny particle who lived in an odd atomic world
         where strange things happened. One day, as Zippy was spinning around,
         his friend Wavey said, "Slow down! I can't see you clearly when you move
