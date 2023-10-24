@@ -24,14 +24,13 @@ body {
 }
 .mode-btn {
   justify-self: flex-end;
-  margin-left: auto;
 }
 .header {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   padding: 0px 10px;
 }

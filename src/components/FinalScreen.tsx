@@ -6,14 +6,9 @@ interface FinalScreenProps {
 
 const FinalScreen: React.FC<FinalScreenProps> = ({ setCurrentStep }) => {
   return (
-    <div className="p-4 relative">
-      <button
-        className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded"
-        onClick={() => setCurrentStep(3)}
-      >
-        Back
-      </button>
-      <p>
+    <div className="px-4 relative flex flex-col items-center">
+      <h1 className="story-title font-bold">Final</h1>
+      <p className="story p-2 text-lg">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod
         odio vitae justo rutrum, in facilisis tellus aliquam.
       </p>

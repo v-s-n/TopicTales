@@ -21,7 +21,7 @@ const TopicInput: React.FC<TopicInputProps> = ({
         onChange={(e) => setTopic(e.target.value)}
       />
       <button
-        className="bg-purple-500 text-white p-3 rounded mt-72 mx-auto text-sm flex flex-row items-center gap-1"
+        className="bg-purple-500 text-white p-3 rounded absolute left-1/2 transform -translate-x-1/2 bottom-28 text-sm flex flex-row items-center gap-1"
         onClick={() => setCurrentStep(2)}
       >
         Continue
