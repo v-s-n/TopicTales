@@ -33,9 +33,11 @@ const CategorySelection: React.FC<CategorySelectionProps> = ({
 
   return (
     <div className="p-4">
-      <label className="block  text-xl font-bold ">Brief your topic</label>
-      <div className="description text-sm text-gray-600">
-        This topic/idea will be used to create concept stories
+      <label className="block  text-xl font-bold px-3">
+        Pick some category you like
+      </label>
+      <div className="description text-sm text-gray-600 mb-4 px-3">
+        We'll use these as an inspiration.
       </div>
       {categories.map((category) => (
         <button

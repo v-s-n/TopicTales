@@ -23,6 +23,12 @@ const LevelSelection: React.FC<LevelSelectionProps> = ({
 
   return (
     <div className="p-4">
+      <label className="block  text-xl font-bold px-3">
+        Pick a level of your choice
+      </label>
+      <div className="description text-sm text-gray-600 mb-4 px-3">
+        Knowing a level will help us articulate most suitable stories.
+      </div>
       {levels.map((level) => (
         <button
           key={level}
